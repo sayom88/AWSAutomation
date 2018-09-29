@@ -1,0 +1,9 @@
+
+Selenoid UI:
+http://18.222.92.86:8080/
+http://18.191.193.185:8080/
+
+https://bintray.com/qameta/generic/download_file?file_path=io/qameta/allure/allure/2.6.0/allure-2.6.0.zip
+
+GGR:
+http://13.59.122.218:4444/quota

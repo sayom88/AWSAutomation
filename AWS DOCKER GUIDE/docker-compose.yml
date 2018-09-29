@@ -1,0 +1,30 @@
+version: '3'
+services:
+  selenium:
+    image: aerokube/selenoid:latest-release
+    network_mode: bridge
+    volumes:
+      - "./:/etc/selenoid"
+      - "/var/run/docker.sock:/var/run/docker.sock"
+      - "./video:/opt/selenoid/video"
+    environment:
+      - OVERRIDE_VIDEO_OUTPUT_DIR=$PWD/video
+    command: [
+      "-conf",
+      "/etc/selenoid/browsers.json",
+      "-video-output-dir", "/opt/selenoid/video",
+      "-mem", "0.5g",
+      "-cpu", "1",
+      "-limit", "5"
+    ]
+    ports:
+      - "4445:4444"
+  selenium-ui:
+    image: "aerokube/selenoid-ui"
+    network_mode: bridge
+    links:
+      - selenium
+    ports:
+      - "8080:8080"
+    command: ["--selenoid-uri", "http://selenium:4445"] 
+ 

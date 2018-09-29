@@ -1,0 +1,24 @@
+<qa:browsers xmlns:qa="urn:config.gridrouter.qatools.ru">
+<browser name="firefox" defaultVersion="59.0">
+    <version number="59.0">
+        <region name="1">
+            <host name="18.191.23.19" port="4445" count="1"/>
+            <host name="18.222.230.136" port="4445" count="1"/>
+        </region>
+    </version>
+</browser>
+<browser name="chrome" defaultVersion="65.0">
+    <version number="65.0">
+        <region name="1">
+            <host name="18.191.23.19" port="4445" count="1"/>
+            <host name="18.222.230.136" port="4445" count="1"/>
+        </region>
+    </version>
+    <version number="64.0">
+        <region name="1">
+            <host name="18.191.23.19" port="4445" count="1"/>
+            <host name="18.222.230.136" port="4445" count="1"/>
+        </region>
+    </version>
+</browser>
+</qa:browsers>

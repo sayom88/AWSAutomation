@@ -1,0 +1,41 @@
+docker run --rm -ti --name zalenium -p 4444:4444 -p 5555:5555 \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    -v /tmp/videos:/home/seluser/videos \
+    --privileged dosel/zalenium start --maxTestSessions 2 --chromeContainers 1 --firefoxContainers 1
+    --videoRecordingEnabled false
+
+docker stop zalenium
+
+Registered a container 09e5b2f15273f4cd8bcd99b2bb3ea93a6512684d048ba0fa98f71c178b1e9a49 http://172.17.0.3:40000.
+
+http://18.188.169.192:4444/grid/console
+
+http://18.188.169.192:4444/dashboard
+
+http://18.221.136.128:4444/grid/admin/live#
+
+http://172.17.0.3:5555
+
+http://18.220.112.29:5555
+
+
+
+docker run --rm -ti --name zalenium -p 4444:4444 -p 5555:5555 \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    -v /tmp/videos:/home/seluser/videos \
+    --privileged dosel/zalenium start --maxTestSessions 2 --desiredContainers 2 \
+    --videoRecordingEnabled false
+
+(With BrowserStack)
+export BROWSER_STACK_USER=anandb2
+export BROWSER_STACK_KEY=gnqzwgybDF1txmjuJJe8
+docker run --rm -ti --name zalenium -p 4444:4444 -p 5555:5555 \
+    -e BROWSER_STACK_USER -e BROWSER_STACK_KEY \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    -v /tmp/videos:/home/seluser/videos \
+    --privileged dosel/zalenium start --maxTestSessions 2 --desiredContainers 2 \
+    --videoRecordingEnabled false \
+    --browserStackEnabled true
+
+
+https://www.youtube.com/watch?v=TGjpc32my0Y
