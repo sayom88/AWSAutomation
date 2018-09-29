@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Automation Suite" allow-return-values="true" verbose="1" parallel="tests" thread-count="6">
+
+
+   <test name="TC01"> 
+    <classes>
+      <class name="pack.GGR_Test1"/>
+    </classes>
+  </test>
+  
+  
+  
+   <test name="TC02"> 
+    <classes>
+      <class name="pack.GGR_Test2"/>
+    </classes>
+  </test>
+  
+  
+  
+</suite>

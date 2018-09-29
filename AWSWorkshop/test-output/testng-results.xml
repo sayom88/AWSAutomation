@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Automation Suite" duration-ms="25690" started-at="2018-09-29T16:30:57Z" finished-at="2018-09-29T16:31:23Z">
+    <groups>
+    </groups>
+    <test name="TC01" duration-ms="22198" started-at="2018-09-29T16:30:57Z" finished-at="2018-09-29T16:31:20Z">
+      <class name="pack.GGR_Test1">
+        <test-method status="PASS" signature="ggr_test1()[pri:0, instance:pack.GGR_Test1@2145b572]" name="ggr_test1" duration-ms="22020" started-at="2018-09-29T16:30:58Z" finished-at="2018-09-29T16:31:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ggr_test1 -->
+      </class> <!-- pack.GGR_Test1 -->
+    </test> <!-- TC01 -->
+    <test name="TC02" duration-ms="25690" started-at="2018-09-29T16:30:57Z" finished-at="2018-09-29T16:31:23Z">
+      <class name="pack.GGR_Test2">
+        <test-method status="PASS" signature="ggr_test2()[pri:0, instance:pack.GGR_Test2@192d43ce]" name="ggr_test2" duration-ms="25634" started-at="2018-09-29T16:30:58Z" finished-at="2018-09-29T16:31:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ggr_test2 -->
+      </class> <!-- pack.GGR_Test2 -->
+    </test> <!-- TC02 -->
+  </suite> <!-- Automation Suite -->
+</testng-results>
